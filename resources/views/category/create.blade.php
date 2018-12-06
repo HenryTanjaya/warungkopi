@@ -15,5 +15,6 @@
       <input type="text" name="title" class="form-control" aria-describedby="category" placeholder="Enter New Category">
     </div>
     <input type="submit" class="btn btn-success">
+  </form>
 </div>
 @endsection

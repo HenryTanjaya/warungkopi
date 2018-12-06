@@ -23,3 +23,8 @@ Route::resource('menu', 'MenuController');
 Route::resource('order', 'OrderController');
 Route::resource('category', 'CategoryController');
 Route::resource('type', 'TypeController');
+
+Route::resource('/admin/menutable','MenutableController');
+Route::resource('/admin/otoritas','OtoritasController');
+Route::resource('/admin/role','RoleController');
+Route::resource('/admin/detail','DetailController');
