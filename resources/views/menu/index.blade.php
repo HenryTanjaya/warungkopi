@@ -25,10 +25,13 @@
             <div class="card-body">
               <p class="card-text">
                 {{$menu->title}}<br>Rp.{{$menu->price}}<br>
-                <div class="form-group">
-                  <label for="Quantity">Quantity</label>
-                  <input type="number" min="0" name={{$menu->id}} class="form-control" aria-describedby="Quantity" placeholder="Qty">
-                </div>
+                @guest
+                @else
+                  <div class="form-group">
+                    <label for="Quantity">Quantity</label>
+                    <input type="number" min="0" name={{$menu->id}} class="form-control" aria-describedby="Quantity" placeholder="Qty">
+                  </div>
+                @endguest
               </p>
             </div>
 
@@ -50,7 +53,10 @@
                   <div class="modal-body">
                     {{$menu->description}}
                     <br>
+                    @guest
+                    @else
                     <a href="/menu/{{$menu->id}}/edit" class="btn btn-primary">Edit</a>
+                  @endguest
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -64,7 +70,10 @@
     @endforeach
   </div>
   @endforeach
+  @guest
+  @else
   <input type="submit" class="btn btn-success">
+  @endguest
 </form>
 </div>
 

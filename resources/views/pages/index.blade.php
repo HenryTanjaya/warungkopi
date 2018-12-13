@@ -34,7 +34,7 @@
       <div class="col-md-6">
         <h2>Tentang</h2>
         <p>Nikmati Lezatnya makanan yang ada dalam kedai kopi bangun yang berdiri sejak 2018. Bisnis Franchise Pertama di Indonesia dengan sajian yang luar biasa</p>
-        <button type="button" class="btn btn-default" name="button">Pesan</button>
+        <a href="/menu" class="btn btn-default">Pesan</button>
       </div>
     </div>
   </section>
